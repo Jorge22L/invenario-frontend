@@ -32,6 +32,12 @@ importers:
       '@angular/router':
         specifier: ^18.2.0
         version: 18.2.8(@angular/common@18.2.8(@angular/core@18.2.8(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.8(rxjs@7.8.1)(zone.js@0.14.10))(@angular/platform-browser@18.2.8(@angular/animations@18.2.8(@angular/core@18.2.8(rxjs@7.8.1)(zone.js@0.14.10)))(@angular/common@18.2.8(@angular/core@18.2.8(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.8(rxjs@7.8.1)(zone.js@0.14.10)))(rxjs@7.8.1)
+      '@ng-icons/core':
+        specifier: ^29.5.1
+        version: 29.5.1(@angular/common@18.2.8(@angular/core@18.2.8(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.8(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1)
+      '@ng-icons/feather-icons':
+        specifier: ^29.5.1
+        version: 29.5.1
       rxjs:
         specifier: ~7.8.0
         version: 7.8.1
@@ -1332,6 +1338,16 @@ packages:
     resolution: {integrity: sha512-x0fWaQtYp4E6sktbsdAqnehxDgEc/VwM7uLsRCYWaiGu0ykYdZPiS8zCWdnjHwyiumousxfBm4SO31eXqwEZhQ==}
     cpu: [x64]
     os: [win32]
+
+  '@ng-icons/core@29.5.1':
+    resolution: {integrity: sha512-wPpNqgoAlbJ0QAxfH2EAfT10ohtwXLQSXoWQ4a1tEhqXOn5kUAA8MqGgl5kILkiVCd8vvvPckLrt84LXQPWVCQ==}
+    peerDependencies:
+      '@angular/common': '>=18.0.0'
+      '@angular/core': '>=18.0.0'
+      rxjs: ^6.5.3 || ^7.4.0
+
+  '@ng-icons/feather-icons@29.5.1':
+    resolution: {integrity: sha512-asF3uIksrs5mYalNKJI90IKZ/9IYuzcqPX6qCXYNH8Daf3qmFYs+d6PkpM/aEr8Qu3nQ7k5FlPWTkDLOWAERsg==}
 
   '@ngtools/webpack@18.2.8':
     resolution: {integrity: sha512-sq0kI8gEen4QlM6X8XqOYy7j4B8iLCYNo+iKxatV36ts4AXH0MuVkP56+oMaoH5oZNoSqd0RlfnotEHfvJAr8A==}
@@ -5805,6 +5821,17 @@ snapshots:
 
   '@msgpackr-extract/msgpackr-extract-win32-x64@3.0.3':
     optional: true
+
+  '@ng-icons/core@29.5.1(@angular/common@18.2.8(@angular/core@18.2.8(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.8(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1)':
+    dependencies:
+      '@angular/common': 18.2.8(@angular/core@18.2.8(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1)
+      '@angular/core': 18.2.8(rxjs@7.8.1)(zone.js@0.14.10)
+      rxjs: 7.8.1
+      tslib: 2.8.0
+
+  '@ng-icons/feather-icons@29.5.1':
+    dependencies:
+      tslib: 2.8.0
 
   '@ngtools/webpack@18.2.8(@angular/compiler-cli@18.2.8(@angular/compiler@18.2.8(@angular/core@18.2.8(rxjs@7.8.1)(zone.js@0.14.10)))(typescript@5.5.4))(typescript@5.5.4)(webpack@5.94.0(esbuild@0.23.0))':
     dependencies:
