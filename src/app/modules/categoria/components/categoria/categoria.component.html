@@ -1,0 +1,64 @@
+<div class="block rounded-lg shadow-md hover:shadow-lg p-4 bg-mint-cream transition-shadow duration-300 ease-in-out m-4">
+  <div class="text-4xl mb-4 text-center">
+    <h2>Listado de Categorías</h2>
+  </div>
+
+  <!-- Formulario -->
+   <form class="space-y-6">
+    <div class="relative z-0 w-full group">
+      <input
+        type="text"
+        name="buscar_cat"
+        id="buscar_cat"
+        placeholder=" "
+        class="block py-2.5 px-0 w-full text-prussian-blue bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-prussian-blue-dark peer" />
+        <label
+        for="buscar_cat"
+        class="absolute text-prussian-blue duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+        Buscar Categoría
+      </label>
+
+      <div class="mt-4 flex justify-end">
+        <button class="bg-prussian-blue-dark hover:bg-prussian-blue p-4 rounded-lg text-mint-cream">Agregar Categoría</button>
+      </div>
+    </div>
+
+   </form>
+
+   <hr class="mt-4">
+
+   <div class="mt-4">
+    <table class="w-full text-center">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Categoría</th>
+          <th>Descripción</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let cat of categorias">
+          <td>{{ cat.idcategoria }}</td>
+          <td>{{ cat.nombre }}</td>
+          <td>{{ cat.descripcion }}</td>
+          <td class="flex justify-center space-x-2">
+            <button class="bg-custom-red hover:bg-red-950 p-4 rounded-lg text-mint-cream">Eliminar</button>
+            <button class="bg-prussian-blue-dark hover:bg-prussian-blue p-4 rounded-lg text-mint-cream">Editar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+   </div>
+
+   <div class="data-list">
+    <div *ngFor="let item of paginatedData">{{ item }}</div>
+  </div>
+
+  <app-pagination
+    [currentPage]="currentPage"
+    [itemsPerPage]="itemsPerPage"
+    [totalItems]="totalItems"
+    (pageChanged)="onPageChange($event)"
+  ></app-pagination>
+</div>

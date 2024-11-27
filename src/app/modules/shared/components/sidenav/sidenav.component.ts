@@ -14,7 +14,7 @@ export class SidenavComponent {
     },
     {
       name: "Categorías",
-      route: "categorias",
+      route: "categoria",
       icon: "featherList"
     },
     {

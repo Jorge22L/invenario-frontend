@@ -1,0 +1,4 @@
+<div>
+  <button (click)="changePage(currentPage - 1)" [disabled]="currentPage === 1"><</button>
+  <button (click)="changePage(currentPage + 1)" [disabled]="currentPage === totalPages">></button>
+</div>
